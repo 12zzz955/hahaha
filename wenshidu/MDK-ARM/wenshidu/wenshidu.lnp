@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"wenshidu\startup_stm32f103xb.o"
+"wenshidu\main.o"
+"wenshidu\gpio.o"
+"wenshidu\i2c.o"
+"wenshidu\usart.o"
+"wenshidu\stm32f1xx_it.o"
+"wenshidu\stm32f1xx_hal_msp.o"
+"wenshidu\stm32f1xx_hal_gpio_ex.o"
+"wenshidu\stm32f1xx_hal_i2c.o"
+"wenshidu\stm32f1xx_hal.o"
+"wenshidu\stm32f1xx_hal_rcc.o"
+"wenshidu\stm32f1xx_hal_rcc_ex.o"
+"wenshidu\stm32f1xx_hal_gpio.o"
+"wenshidu\stm32f1xx_hal_dma.o"
+"wenshidu\stm32f1xx_hal_cortex.o"
+"wenshidu\stm32f1xx_hal_pwr.o"
+"wenshidu\stm32f1xx_hal_flash.o"
+"wenshidu\stm32f1xx_hal_flash_ex.o"
+"wenshidu\stm32f1xx_hal_exti.o"
+"wenshidu\stm32f1xx_hal_uart.o"
+"wenshidu\system_stm32f1xx.o"
+--strict --scatter "wenshidu\wenshidu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "wenshidu.map" -o wenshidu\wenshidu.axf
